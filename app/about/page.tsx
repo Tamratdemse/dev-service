@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 import Layout from "@/components/layout";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -20,9 +21,11 @@ export default function AboutPage() {
             </div>
             <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
               <div className="aspect-video overflow-hidden rounded-xl bg-background shadow-lg">
-                <img
-                  src="/placeholder.svg?height=720&width=1280"
+                <Image
+                  src="/images/dev.jpg"
                   alt="DevMatrix team"
+                  width={500}
+                  height={300}
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -43,7 +46,7 @@ export default function AboutPage() {
                 A New Beginning
               </h2>
               <p className="text-muted-foreground md:text-lg">
-                Founded in 2023, DevMatrix was born from a vision to bring fresh
+                Founded in 2025, DevMatrix was born from a vision to bring fresh
                 perspectives to the software development industry. We saw an
                 opportunity to combine modern technologies with innovative
                 approaches.
@@ -56,7 +59,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span>Founded in 2023</span>
+                  <span>Founded in 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary" />
@@ -75,30 +78,38 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div className="aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/placeholder.svg?height=400&width=400"
+                  <Image
+                    src="/images/dev.jpg"
                     alt="DevMatrix team meeting"
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/placeholder.svg?height=400&width=400"
+                  <Image
+                    src="/images/dev.jpg"
                     alt="DevMatrix office"
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/placeholder.svg?height=400&width=400"
+                  <Image
+                    src="/images/dev.jpg"
                     alt="DevMatrix coding"
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="aspect-square overflow-hidden rounded-xl bg-muted">
-                  <img
-                    src="/placeholder.svg?height=400&width=400"
+                  <Image
+                    src="/images/dev.jpg"
                     alt="DevMatrix brainstorming"
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full"
                   />
                 </div>

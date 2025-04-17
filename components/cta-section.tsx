@@ -14,8 +14,8 @@ export default function CtaSection() {
                   Ready to Transform Your Business?
                 </h2>
                 <p className="text-primary-foreground/90 md:text-xl">
-                  Let's discuss how our software solutions can help you achieve
-                  your business goals.
+                  Let&apos;s discuss how our software solutions can help you
+                  achieve your business goals.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end lg:items-center">

@@ -39,8 +39,8 @@ export default function TestimonialSection() {
               What Our Clients Say
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Don't just take our word for it. Here's what our clients have to
-              say about working with us.
+              Don&apos;t just take our word for it. Here&apos;s what our clients
+              have to say about working with us.
             </p>
           </div>
         </div>
@@ -56,6 +56,7 @@ export default function TestimonialSection() {
                   <Avatar>
                     <AvatarImage
                       src={`/placeholder.svg?height=40&width=40&text=${testimonial.avatar}`}
+                      alt={testimonial.author}
                     />
                     <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                   </Avatar>

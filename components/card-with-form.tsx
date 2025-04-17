@@ -9,13 +9,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 export function CardWithForm() {
   return (
@@ -27,23 +20,27 @@ export function CardWithForm() {
       <CardContent>
         <form>
           <div className="grid w-full items-center gap-4">
+            {/* Name Input */}
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="name">Name</Label>
               <Input id="name" placeholder="Name of your project" />
             </div>
+
+            {/* Framework Dropdown */}
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="framework">Framework</Label>
-              <Select>
-                <SelectTrigger id="framework">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="next">Next.js</SelectItem>
-                  <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                  <SelectItem value="astro">Astro</SelectItem>
-                  <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                </SelectContent>
-              </Select>
+              <select
+                id="framework"
+                className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="" disabled selected>
+                  Select
+                </option>
+                <option value="next">Next.js</option>
+                <option value="sveltekit">SvelteKit</option>
+                <option value="astro">Astro</option>
+                <option value="nuxt">Nuxt.js</option>
+              </select>
             </div>
           </div>
         </form>

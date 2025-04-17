@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Code, Database, Globe, Smartphone } from "lucide-react";
 import Layout from "@/components/layout";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,15 +16,15 @@ export default function Home() {
             <div className="space-y-4">
               <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
                 <Badge variant="outline" className="bg-background">
-                  New in 2023
+                  New in 2025
                 </Badge>
               </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Fresh Approach to Software Development
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                We're a new team with fresh ideas, building innovative software
-                solutions for the modern business landscape.
+                We&apos;re a new team with fresh ideas, building innovative
+                software solutions for the modern business landscape.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
@@ -36,9 +37,11 @@ export default function Home() {
             </div>
             <div className="mx-auto w-full max-w-[500px] lg:max-w-none">
               <div className="aspect-video overflow-hidden rounded-xl bg-background shadow-lg">
-                <img
-                  src="/placeholder.svg?height=720&width=1280"
+                <Image
+                  src="/images/dev.jpg"
                   alt="DevMatrix software development"
+                  width={500}
+                  height={300}
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -123,8 +126,8 @@ export default function Home() {
                     Ready to Build Something Amazing?
                   </h2>
                   <p className="text-primary-foreground/90 md:text-xl">
-                    Let's collaborate on your next project with fresh ideas and
-                    modern approaches.
+                    Let&apos;s collaborate on your next project with fresh ideas
+                    and modern approaches.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end lg:items-center">
