@@ -169,7 +169,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   <span className="sr-only">Instagram</span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://linkedin.com/in/devmetrix-devmetrix-a99230362"
                   className="text-muted-foreground hover:text-primary"
                 >
                   <Linkedin className="h-5 w-5" />
@@ -219,13 +219,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {/* Adjusted this div to span two columns on medium screens */}
               <h3 className="mb-4 text-sm font-semibold">Contact Us</h3>
               <p className="text-sm text-muted-foreground">
-                123 Main Street, Addis Ababa, Ethiopia
+                Addis Ababa, Ethiopia
               </p>
               <p className="text-sm text-muted-foreground">
-                Email: info@devmatrix.com
+                Email: devmetrix82@gmail.com
               </p>
               <p className="text-sm text-muted-foreground">
-                Phone: +251 11 XXXXXXX
+                Phone: +251 956727276
               </p>
             </div>
           </div>
